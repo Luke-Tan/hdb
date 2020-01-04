@@ -47,5 +47,5 @@ function markHdbCluster(x,y,arr,marked){
 	markHdbCluster(x-1, y-1, arr, marked);
 }
 
-
-console.log(countHdbClusters(arr));
+const output = countHdbClusters(arr);
+console.log(output);
