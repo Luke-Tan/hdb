@@ -1,17 +1,11 @@
 const fs = require('fs')
 const inputFile = process.argv[2];
 
-const data = fs.readFileSync(inputFile, 'utf8').split('\r\n');
+const data = fs.readFileSync(inputFile, 'utf8').split('\n');
 let arr = [];
 data.forEach(line => {
 	arr.push(line.split(''));
 })
-
-// const arr = [['0','0','0','+','+','0',],
-// 			 ['+','+','+','0','0','+',],
-// 			 ['0','0','0','0','0','0',],
-// 			 ['+','0','0','0','0','+',],
-// 			 ['+','+','0','0','+','0',]]
 
 function countHdbClusters(arr){
 	let counter = 0;
